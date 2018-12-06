@@ -22,7 +22,7 @@ var x = setInterval(function () {
 
 var i = 0;
 var txt = 'Ullernrevyen 2019';
-var speed = 70; //Duration
+var speed = 70;
 
 var typeWriter = setInterval(() => {
     if (i < txt.length) {
