@@ -11,7 +11,7 @@ var x = setInterval(function () {
 
     document.getElementById("counter").innerHTML = days + "d " + hours + "t "
         + minutes + "m " + seconds + "s ";
-    document.getElementById('counter').style.opacity = 1; 
+    document.getElementById('counter').style.opacity = 1;
 
 
     if (distance < 0) {
@@ -30,5 +30,3 @@ var typeWriter = setInterval(() => {
         i++;
     }
 }, speed);
-
-ScrollReveal().reveal('.test');

@@ -1,18 +1,18 @@
 body,
 html {
-    height: 100%
+    height: 100%;
+    background-color: #f1f1f1;
 }
 
 main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -90%);
 }
 
 h1,
 p {
-    font-family: roboto;
     text-align: center;
 }
 
@@ -24,8 +24,24 @@ h1 {
 
 p {
     margin-top: 20px;
-    color: #dadada;
+    color: #d5d5d5;
     font-size: 46px;
     opacity: 0;
     transition: all 1s ease-in;
+}
+
+hr {
+    margin: auto;
+    animation: lineAnim 2s ;
+    width: 80%;
+}
+
+@keyframes lineAnim {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
 }
