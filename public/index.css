@@ -1,10 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body,
 html {
     height: 100%;
-    background-color: #f1f1f1;
 }
 
-main {
+#container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,6 +26,13 @@ h1 {
     color: #bdbdbd;
     margin-bottom: 10px;
 }
+h2 {
+    color: #484848;
+    font-family: roboto;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 36px;
+}
 
 p {
     margin-top: 20px;
@@ -34,10 +44,56 @@ p {
 
 hr {
     margin: auto;
-    animation: lineAnim 1.5s ;
+    animation: lineAnim 1.5s;
     width: 35vw;
     max-width: 455px;
 }
+
+#content {
+    display: none;
+    margin: 10px auto;
+    width: calc(100% - 20px);
+    max-width: 800px;
+    padding: 10px;
+}
+
+#grid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    background-color: #f1f1f1;
+}
+
+#logoWrapper {
+    width: 100%;
+    background-color: white;
+    display: table;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+#mainLogo {
+    max-height: 400px;
+    margin: 0 auto;
+    display: table;
+    max-width: 100%;
+}
+
+.magsonPromo {
+    width: 100%;
+    display: table;
+    margin: 2px auto;
+}
+
+#grid>img {
+    grid-column: span 1;
+    position: relative;
+    width: 100%;
+}
+
 
 @keyframes lineAnim {
     from {
@@ -47,8 +103,4 @@ hr {
     to {
         width: 35vw;
     }
-}
-
-@media only screen and (max-width: 1130px) {
-    
 }

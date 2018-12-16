@@ -16,7 +16,8 @@ var x = setInterval(function () {
 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("counter").innerHTML = "EXPIRED";
+        document.getElementById("content").style.display = 'table';
+        document.getElementById("container").style.display = 'none';
     }
 }, 1000);
 
