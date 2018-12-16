@@ -5,14 +5,15 @@
 body,
 html {
     height: 100%;
+    margin: 0;
 }
 
 #container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 80%;
-    transform: translate(-50%, -90%);
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 h1,
@@ -22,10 +23,11 @@ p {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 100px;
     color: #bdbdbd;
     margin-bottom: 10px;
 }
+
 h2 {
     color: #484848;
     font-family: roboto;
@@ -37,14 +39,14 @@ h2 {
 p {
     margin-top: 20px;
     color: #d5d5d5;
-    font-size: 3vw;
+    font-size: 55px;
     opacity: 0;
     transition: opacity 1s ease-in;
 }
 
 hr {
     margin: auto;
-    animation: lineAnim 1.5s;
+    animation: lineAnim 3.2s;
     width: 35vw;
     max-width: 455px;
 }
@@ -102,5 +104,25 @@ hr {
 
     to {
         width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    p {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 426px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 25px;
     }
 }
