@@ -1,4 +1,4 @@
-var countDownDate = new Date("December 18, 2018 12:20:00").getTime();
+/* var countDownDate = new Date("December 18, 2018 12:20:00").getTime();
 
 var x = setInterval(function () {
     var now = new Date().getTime();
@@ -19,7 +19,7 @@ var x = setInterval(function () {
         document.getElementById("content").style.display = 'table';
         document.getElementById("container").style.display = 'none';
     }
-}, 1000);
+}, 1000); 
 
 var i = 0;
 var txt = 'Ullernrevyen 2019';
@@ -30,4 +30,4 @@ var typeWriter = setInterval(() => {
         document.getElementById("title").innerHTML += txt.charAt(i);
         i++;
     }
-}, speed);
+}, speed); */
