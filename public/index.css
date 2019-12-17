@@ -62,9 +62,10 @@ hr {
 #grid {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     grid-row-gap: 2px;
+    align-items: center;
     grid-column-gap: 2px;
     background-color: #f1f1f1;
 }
@@ -96,19 +97,28 @@ hr {
 }
 
 video {
+    outline: 0;
     width: 100%;
 }
 
-#grid>img {
+#grid div {
+    padding: 10px;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#grid img {
     grid-column: span 1;
-    position: relative;
     width: 100%;
 }
 
 #ticketsBtn {
     width: 30%;
     font-family: roboto;
-    background-color: #b2b2b2;
+    background-color: #7ed321;
     cursor: pointer;
     padding: 15px 20px;
     border: 0 solid;
@@ -122,8 +132,8 @@ video {
     text-decoration: none;
 }
 
-#ticketsBtn:hover{
-    background-color: #cccccc;
+#ticketsBtn:hover {
+    background-color: #8ad737;
     ;
 }
 
