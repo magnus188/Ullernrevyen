@@ -1,4 +1,4 @@
-var countDownDate = new Date("December 18, 2019 12:00:00").getTime();
+/* var countDownDate = new Date("December 18, 2019 12:00:00").getTime();
 
 var x = setInterval(function () {
     var now = new Date().getTime();
@@ -30,4 +30,4 @@ var typeWriter = setInterval(() => {
         document.getElementById("title").innerHTML += txt.charAt(i);
         i++;
     }
-}, speed);
+}, speed); */
